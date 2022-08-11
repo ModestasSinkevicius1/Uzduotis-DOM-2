@@ -57,5 +57,19 @@ const domBtnH1Font = document.querySelector('#h1-font');
 domBtnH1Color.addEventListener('click', () => domH1.style.color = 'green');
 domBtnH1Font.addEventListener('click', () => domH1.style.fontSize = '10px');
 
+domI.addEventListener('click', (e)=> e.target.style.fontWeight = 'bold');
+
+const domDivPrice = document.querySelector('div.prices');
+let toggle = false;
+
+domDivPrice.addEventListener('click', (e) => {
+    if(e.target.style.backgroundColor === 'rgb(128, 128, 128)'){
+        e.target.style.backgroundColor = 'white';    
+    }
+    else{
+        e.target.style.backgroundColor = 'rgb(128, 128, 128)';
+    }
+});
+
 
 
